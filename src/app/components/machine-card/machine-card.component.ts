@@ -15,12 +15,10 @@ import { Machine } from '@models/machine.interface';
       @apply bg-[#dcdcdc];
     }
     :host[data-status=${MACHINE_STATE.ALARM}] {
-      @apply bg-red-600;
-      @apply text-white
+      @apply bg-red-600 text-white;
     }
     :host[data-status=${MACHINE_STATE.WARNING}] {
-      @apply bg-orange-400;
-      @apply text-white
+      @apply bg-orange-400 text-white;
     }
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
