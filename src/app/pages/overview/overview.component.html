@@ -1,0 +1,9 @@
+<section class="flex justify-center w-full p-5 h-full items-center">
+    @for(machine of machineData(); track machine; let last = $last) {
+        <app-machine-card [machine]="machine" showMainIcon></app-machine-card>
+
+        @if(!last){
+            <span class="border-b-green-700 border-b-8 h-1 w-full"></span>
+        }
+    }
+</section>

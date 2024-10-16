@@ -1,0 +1,5 @@
+export enum MACHINE_STATE {
+    RUNNING = "RUNNING",
+    ALARM = "ALARM",
+    WARNING = "WARNING"
+}

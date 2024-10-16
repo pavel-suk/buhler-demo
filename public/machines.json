@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Scale",
+        "state": "RUNNING",
+        "icon": "scale"
+    },
+    {
+        "name": "Attacher",
+        "state": "ALARM",
+        "icon": "orders"
+    },
+    {
+        "name": "Packer",
+        "state": "RUNNING",
+        "icon": "package_2"
+    },
+    {
+        "name": "Closer",
+        "state": "WARNING",
+        "icon": "view_compact"
+    }
+]

@@ -1,0 +1,26 @@
+<ng-container [ngTemplateOutlet]="statusIconTpl"/>
+
+@if(showMainIcon()){
+  <span class="material-symbols-outlined text-7xl pt-2">{{machine().icon}}</span>
+}
+
+<h2 class="p-2.5">{{machine().name}}</h2>
+
+<ng-template #statusIconTpl>
+  <section class="absolute right-2 top-1">
+    @switch (machine().state) {
+      @case(MACHINE_STATE.RUNNING){
+        <span class="material-symbols-outlined text-green-500">settings_backup_restore</span>
+      }
+      @case(MACHINE_STATE.ALARM){
+        <span class="material-symbols-outlined">error</span>
+      }
+      @case(MACHINE_STATE.WARNING){
+        <span class="material-symbols-outlined">warning</span>
+      }
+      @default {
+        <span class="material-symbols-outlined">help</span>
+      }
+    }
+  </section>
+</ng-template>

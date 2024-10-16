@@ -1,0 +1,21 @@
+<header class="px-2 w-full bg-[#dcdcdc] flex justify-between items-center border-b-4 border-b-[#00aa9d]">
+    <img src="logo.png" width="350" class="py-2">
+    <ul class="flex gap-8">
+        <li class="flex gap-2">
+            <span class="material-symbols-outlined">
+                schedule
+            </span>
+            {{today | date: 'dd.MM.YYYY HH:mm:ss'}}
+        </li>
+        <li class="flex gap-2">
+            <span class="material-symbols-outlined">
+                account_circle
+            </span>
+            Operator
+        </li>
+    </ul>
+</header>
+
+<nav class="bg-[#dcdcdc]">
+    <app-navigation/>
+</nav>
